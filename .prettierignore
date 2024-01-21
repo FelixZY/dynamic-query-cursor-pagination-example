@@ -1,0 +1,7 @@
+001_insert_data.sql
+
+### .gitignore below this line
+
+node_modules/
+coverage/
+/debug.log

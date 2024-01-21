@@ -1,0 +1,22 @@
+{
+  "name": "Devcontainer",
+  "image": "mcr.microsoft.com/devcontainers/base:bullseye",
+  "workspaceFolder": "/workspaces/dynamic-query-cursor-pagination-example",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "nodeGypDependencies": true,
+      "version": "18",
+    },
+    "ghcr.io/devcontainers/features/docker-outside-of-docker": {},
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "ms-azuretools.vscode-docker",
+        "Orta.vscode-jest",
+      ],
+    },
+  },
+  "postCreateCommand": "npm install",
+}
